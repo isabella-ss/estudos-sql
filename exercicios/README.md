@@ -1,9 +1,9 @@
-# 🗄️ Meus Estudos de SQL
+# 🗄️ Meus Estudos de SQL - Parte EXERCICIOS
  
 > Caderno pessoal de estudos: anotações, scripts e exercícios para dominar SQL e bancos de dados relacionais.
  
-![SQL](https://img.shields.io/badge/SQL-Estudos-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Status](https://img.shields.io/badge/status-em%20andamento-yellow?style=flat-square)
+(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26ltSlJF9w5o7Wi5_YnlptbwaG5lDGGPXCqDyaT0U2g&s=10)
+(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2-Ae0W6bNDCaLHnZOTvgLK6JM04t6MChFiInZeIojw&s=10)
  
 ---
  
@@ -28,18 +28,7 @@ Consolidar meu aprendizado em SQL, do básico ao intermediário, com **prática 
  
 ✅ concluído · 🔄 estudando · ⏳ a fazer
  
-## 📂 Estrutura
- 
-```text
-📦 estudos-sql
- ┣ 📁 01-conceitos
- ┣ 📁 exercicios
- ┃ ┣ 📁 db_pedidos
- ┃ ┗ 📁 db_hospital
- ┣ 📁 resumos
- ┗ 📄 README.md
-```
- 
+
 ## 🧠 Resumos rápidos
  
 ### Categorias de comandos
@@ -108,6 +97,7 @@ ORDER BY total_pedidos DESC;
 - [ ] Em N:N, criei uma tabela associativa?
 - [ ] A FK aponta para uma PK (ou coluna única)?
 - [ ] Defini o comportamento de `ON DELETE` / `ON UPDATE`?
+
 ## 🐞 Erros comuns (e como evitar)
  
 | Erro | Causa provável | Solução |
@@ -129,14 +119,6 @@ ORDER BY total_pedidos DESC;
 - Documentação oficial do SGBD utilizado
 - [SQLBolt](https://sqlbolt.com/) e [SQL Zoo](https://sqlzoo.net/) para praticar
 
-  
-## 🗓️ Próximos passos
- 
-- [ ] Fechar o módulo de relacionamentos e JOINs
-- [ ] Resolver os exercícios sem consulta
-- [ ] Estudar subconsultas e views
-- [ ] Fazer um mini projeto de banco do zero (modelagem + scripts)
----
  
 <div align="center">
 📝 *Atualizado conforme eu avanço nos estudos.*
