@@ -1,10 +1,15 @@
 # 🗄️ Meus Estudos de SQL - Parte EXERCICIOS
  
 > Caderno pessoal de estudos: anotações, scripts e exercícios para dominar SQL e bancos de dados relacionais.
- 
-(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26ltSlJF9w5o7Wi5_YnlptbwaG5lDGGPXCqDyaT0U2g&s=10)
-(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2-Ae0W6bNDCaLHnZOTvgLK6JM04t6MChFiInZeIojw&s=10)
- 
+
+ <div align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26ltSlJF9w5o7Wi5_YnlptbwaG5lDGGPXCqDyaT0U2g&s=10" width="600" alt="Banner do projeto">
+
+
+<div align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2-Ae0W6bNDCaLHnZOTvgLK6JM04t6MChFiInZeIojw&s=10" width="600" alt="Banner do projeto">
+
+ </div>
 ---
  
 ## 🎯 Objetivo
