@@ -1,0 +1,23 @@
+create database db_aulas;
+
+use db_aulas;
+
+create table tb_aula
+(cd_aula int not null primary key,
+aula char(30));
+
+-- para adicionar table turma
+alter table tb_aula
+add turma int;
+
+-- alterar o campo turma para char(30)
+
+alter table tb_aula
+modify column turma char(30);
+
+-- excluir o campo turma
+alter table tb_aula
+drop column turma
+
+-- deletar a tb_aula
+DROP TABLE IF EXISTS tb_aula;

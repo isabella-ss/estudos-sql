@@ -1,0 +1,49 @@
+-- criando uma view 
+
+-- listas isbn, titulo, editora
+-- join
+use db_livro
+
+select L.isbn, L.titulo, E.editora from
+tb_livro L inner join tb_editora E
+on L.cd_editora = E.cd_editora;
+
+-- produto cartesiano - algebra relacional
+select L.isbn, L.titulo, E.editora from
+tb_livro L inner join tb_editora E;
+
+-- join isbn, titulo, editora e genero
+
+select L.isbn , L.titulo, E.editora, G.genero
+from tb_livro L inner join tb_editora E
+on L.cd_editora = E.cd_editora 
+inner join tb_genero G
+on L.cd_genero = G.cd_genero
+
+
+-- listar titulo, editora quando for maior 200
+select L.isbn, L.titulo, E.editora, E.preco
+from tb_livro L inner join tb_editora E
+on cd_editora = cd_editora
+where L.preco > 200;
+
+-- lista isbn,titulo,genero e preco 
+-- quando o preco entre 200 e 300 reais
+
+select L.isbn, L.titulo, L.genero, E.preco
+from tb_livro L inner join tb_genero E
+on cd_genero = cd_genero
+where L.preco >= 200 and L.preco <= 300;
+
+-- lista titulo, editora, genero quando cd_editora 1, 2 e 3
+select L.titulo, E.editora, G.genero, l.cd_editora
+from tb_livro L inner join tb_editora E
+on L.cd_editora = G.cd_editora 
+inner join tb_genero G
+on L.cd_genero = G.cd_genero
+where L.cd-editora in(1,2,3);
+
+-- lista titulo, editora, preco e preco com mais 20%
+ select L.titulo, E.editora, L.preco, L.preco * 1,2 as novo_preco
+from tb_livro L inner join tb_editora E
+on L.cd_editora = E.cd_editora

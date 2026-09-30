@@ -1,0 +1,42 @@
+-- listas isbn, titulo, editora
+-- outer join
+use db_lib
+
+SELECT 
+    tb_livro.isbn,
+    tb_livro.titulo,
+    tb_editora.editora,
+    tb_livro.preco
+FROM tb_livro
+LEFT JOIN tb_editora
+    ON tb_livro.cd_editora = tb_editora.cd_editora;
+    
+    
+SELECT 
+    tb_editora.cd_editora,
+    tb_editora.editora,
+    tb_livro.titulo
+FROM tb_editora
+LEFT JOIN tb_livro
+    ON tb_editora.cd_editora = tb_livro.cd_editora;
+    
+SELECT 
+    tb_editora.cd_editora,
+    tb_editora.editora
+FROM tb_editora
+LEFT JOIN tb_livro
+    ON tb_editora.cd_editora = tb_livro.cd_editora
+WHERE tb_livro.isbn IS NULL;
+
+
+SELECT
+    l.isbn,
+    l.titulo,
+    e.editora,
+    g.genero,
+    l.preco
+FROM tb_livro AS l
+LEFT JOIN tb_editora AS e
+    ON l.cd_editora = e.cd_editora
+LEFT JOIN tb_genero AS g
+    ON l.cd_genero = g.cd_genero;
