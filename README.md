@@ -1,4 +1,4 @@
-# 🗄️ Meus Estudos de SQL
+# >>> Meus Estudos de SQL <<<
  
 > Caderno pessoal de estudos: anotações, scripts e exercícios para dominar SQL e bancos de dados relacionais.
  
@@ -7,11 +7,11 @@
  
 ---
  
-## 🎯 Objetivo
+## >>> Objetivo <<<
  
 Consolidar meu aprendizado em SQL, do básico ao intermediário, com **prática constante**. Aqui eu guardo o que aprendo, os erros que cometo e as soluções que encontro, para revisar rápido antes de provas e projetos.
  
-## 📚 Conteúdo
+## >>> Conteúdo <<<
  
 | # | Tema | Status |
 |---|------|--------|
@@ -40,7 +40,7 @@ Consolidar meu aprendizado em SQL, do básico ao intermediário, com **prática 
  ┗ 📄 README.md
 ```
  
-## 🧠 Resumos rápidos
+## >>> Resumos rápidos <<<
  
 ### Categorias de comandos
  
@@ -100,7 +100,7 @@ HAVING COUNT(p.id_pedido) > 0
 ORDER BY total_pedidos DESC;
 ```
  
-## 🧭 Checklist para modelar relacionamentos
+## >>> Checklist para modelar relacionamentos <<< 
  
 - [ ] Cada tabela tem uma chave primária?
 - [ ] O relacionamento é 1:1, 1:N ou N:N?
@@ -108,7 +108,7 @@ ORDER BY total_pedidos DESC;
 - [ ] Em N:N, criei uma tabela associativa?
 - [ ] A FK aponta para uma PK (ou coluna única)?
 - [ ] Defini o comportamento de `ON DELETE` / `ON UPDATE`?
-## 🐞 Erros comuns (e como evitar)
+## >>> Erros comuns (e como evitar) <<<
  
 | Erro | Causa provável | Solução |
 |------|----------------|---------|
@@ -117,20 +117,20 @@ ORDER BY total_pedidos DESC;
 | Linhas sumindo no `JOIN` | Usei `INNER` em vez de `LEFT` | Escolher o tipo de JOIN conforme a necessidade |
 | `UPDATE`/`DELETE` sem `WHERE` | Esquecimento | Testar antes com um `SELECT` |
  
-## 🛠️ Ferramentas
+## >>> Ferramentas <<<
  
 - SGBD: MySQL 
 - Cliente: MySQL Workbench 
 - Modelagem: brModelo
   
-## 🔗 Referências
+## >>> Referências <<<
  
 - Anotações e slides das aulas
 - Documentação oficial do SGBD utilizado
 - [SQLBolt](https://sqlbolt.com/) e [SQL Zoo](https://sqlzoo.net/) para praticar
 
   
-## 🗓️ Próximos passos
+## >>> Próximos passos <<<
  
 - [ ] Fechar o módulo de relacionamentos e JOINs
 - [ ] Resolver os exercícios sem consulta
@@ -139,7 +139,7 @@ ORDER BY total_pedidos DESC;
 ---
  
 <div align="center">
-📝 *Atualizado conforme eu avanço nos estudos.*
+ *Atualizado conforme eu avanço nos estudos.*
  
 </div>
  
