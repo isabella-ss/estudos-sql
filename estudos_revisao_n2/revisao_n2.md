@@ -862,7 +862,7 @@ SELECT teste();
 
 ---
 
-## 💡 Dicas finais para a prova
+## Dicas finais para a prova
 
 Memorize estas quatro estruturas:
 
