@@ -1,4 +1,4 @@
-#>>> Exercícios Resolvidos – Stored Procedure e Function <<<
+# >>> Exercícios Resolvidos – Stored Procedure e Function <<<
 
 Exercícios com resolução comentada em SQL (MySQL). Para os exercícios de Stored Procedure, use a tabela `produtos`. Os de Function são independentes de tabela, exceto o desafio final e alguns exemplos de uso.
 
