@@ -12,11 +12,11 @@
  </div>
 ---
  
-## 🎯 Objetivo
+## Objetivo
  
 Consolidar meu aprendizado em SQL, do básico ao intermediário, com **prática constante**. Aqui eu guardo o que aprendo, os erros que cometo e as soluções que encontro, para revisar rápido antes de provas e projetos.
  
-## 📚 Conteúdo
+## Conteúdo
  
 | # | Tema | Status |
 |---|------|--------|
@@ -34,7 +34,7 @@ Consolidar meu aprendizado em SQL, do básico ao intermediário, com **prática 
 ✅ concluído · 🔄 estudando · ⏳ a fazer
  
 
-## 🧠 Resumos rápidos
+## Resumos rápidos
  
 ### Categorias de comandos
  
@@ -59,7 +59,8 @@ Consolidar meu aprendizado em SQL, do básico ao intermediário, com **prática 
 - **Primária (PK):** identifica cada linha de forma única
 - **Candidata:** qualquer coluna (ou conjunto) que poderia ser a PK
 - **Estrangeira (FK):** referencia a PK de outra tabela e garante integridade referencial
-## 💻 Exemplos que uso como referência
+  
+## Exemplos que uso como referência
  
 ### Criando tabelas e relacionamentos
  
@@ -94,7 +95,7 @@ HAVING COUNT(p.id_pedido) > 0
 ORDER BY total_pedidos DESC;
 ```
  
-## 🧭 Checklist para modelar relacionamentos
+## Checklist para modelar relacionamentos
  
 - [ ] Cada tabela tem uma chave primária?
 - [ ] O relacionamento é 1:1, 1:N ou N:N?
@@ -103,7 +104,7 @@ ORDER BY total_pedidos DESC;
 - [ ] A FK aponta para uma PK (ou coluna única)?
 - [ ] Defini o comportamento de `ON DELETE` / `ON UPDATE`?
 
-## 🐞 Erros comuns (e como evitar)
+## Erros comuns (e como evitar)
  
 | Erro | Causa provável | Solução |
 |------|----------------|---------|
@@ -112,13 +113,13 @@ ORDER BY total_pedidos DESC;
 | Linhas sumindo no `JOIN` | Usei `INNER` em vez de `LEFT` | Escolher o tipo de JOIN conforme a necessidade |
 | `UPDATE`/`DELETE` sem `WHERE` | Esquecimento | Testar antes com um `SELECT` |
  
-## 🛠️ Ferramentas
+## Ferramentas
  
 - SGBD: MySQL 
 - Cliente: MySQL Workbench 
 - Modelagem: brModelo
   
-## 🔗 Referências
+## Referências
  
 - Anotações e slides das aulas
 - Documentação oficial do SGBD utilizado
@@ -126,7 +127,7 @@ ORDER BY total_pedidos DESC;
 
  
 <div align="center">
-📝 *Atualizado conforme eu avanço nos estudos.*
+ *Atualizado conforme eu avanço nos estudos.*
  
 </div>
  
