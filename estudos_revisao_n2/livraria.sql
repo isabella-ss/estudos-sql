@@ -1,9 +1,7 @@
 DROP DATABASE IF EXISTS livraria;
 
 CREATE DATABASE livraria
-    CHARACTER SET utf8mb4
-    COLLATE utf8mb4_unicode_ci;
-
+    
 USE livraria;
 
 CREATE TABLE livros (
