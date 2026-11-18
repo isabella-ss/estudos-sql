@@ -1,10 +1,10 @@
-# 📚 Revisão de Banco de Dados – Stored Procedure e Function
+# >> Revisão de Banco de Dados – Stored Procedure e Function <<
 
 Este material apresenta uma revisão dos principais conceitos de **Stored Procedure** e **Function** no MySQL, com explicações, sintaxes, exemplos de códigos e exercícios resolvidos.
 
 ---
 
-## 📌 Sumário
+## Sumário
 
 1. [O que é Stored Procedure?](#1-o-que-é-stored-procedure)
 2. [Vantagens da Stored Procedure](#2-vantagens-da-stored-procedure)
@@ -740,4 +740,181 @@ SELECT triplo(10);
 
 ### Exercício 3 – Function com dois parâmetros
 
-Crie uma função que receba o preço e a quantidade de um produto e retorne o valor total
+Crie uma função que receba o preço e a quantidade de um produto e retorne o valor total.
+
+**Resolução:**
+
+```sql
+DELIMITER //
+
+CREATE FUNCTION calcular_total(
+    preco DECIMAL(10,2),
+    quantidade INT
+)
+RETURNS DECIMAL(10,2)
+DETERMINISTIC
+BEGIN
+    RETURN preco * quantidade;
+END //
+
+DELIMITER ;
+```
+
+**Execução:**
+
+```sql
+SELECT calcular_total(50, 3);
+```
+
+**Resultado:** `150.00`.
+
+### Exercício 4 – Function com IF
+
+Crie uma função que receba uma idade e informe se a pessoa é maior ou menor de idade.
+
+**Resolução:**
+
+```sql
+DELIMITER //
+
+CREATE FUNCTION verificar_idade(idade INT)
+RETURNS VARCHAR(20)
+DETERMINISTIC
+BEGIN
+    IF idade >= 18 THEN
+        RETURN 'Maior de idade';
+    ELSE
+        RETURN 'Menor de idade';
+    END IF;
+END //
+
+DELIMITER ;
+```
+
+**Execução:**
+
+```sql
+SELECT verificar_idade(20);
+```
+
+**Resultado:** `Maior de idade`.
+
+---
+
+## 12. Resumo Geral
+
+Esta é uma parte importante para memorizar antes da prova.
+
+| Conteúdo                          | Comando principal |
+| --------------------------------- | ----------------- |
+| Criar Procedure                   | `CREATE PROCEDURE` |
+| Executar Procedure                | `CALL`            |
+| Criar Function                    | `CREATE FUNCTION` |
+| Executar Function                 | `SELECT`          |
+| Parâmetro de entrada na Procedure | `IN`              |
+| Tipo de retorno da Function       | `RETURNS`         |
+| Retornar resultado                | `RETURN`          |
+| Iniciar comandos                  | `BEGIN`           |
+| Finalizar comandos                | `END`             |
+| Função determinística             | `DETERMINISTIC`   |
+
+### Diferenças que não podem ser confundidas
+
+#### Stored Procedure
+
+```sql
+DELIMITER //
+
+CREATE PROCEDURE teste()
+BEGIN
+    SELECT * FROM alunos;
+END //
+
+DELIMITER ;
+```
+
+**Execução:**
+
+```sql
+CALL teste();
+```
+
+#### Function
+
+```sql
+DELIMITER //
+
+CREATE FUNCTION teste()
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    RETURN 10;
+END //
+
+DELIMITER ;
+```
+
+**Execução:**
+
+```sql
+SELECT teste();
+```
+
+---
+
+## 💡 Dicas finais para a prova
+
+Memorize estas quatro estruturas:
+
+**1. Procedure sem parâmetro**
+
+```sql
+CREATE PROCEDURE nome()
+BEGIN
+    -- comandos SQL
+END;
+```
+
+**2. Procedure com parâmetro**
+
+```sql
+CREATE PROCEDURE nome(IN parametro TIPO)
+BEGIN
+    -- comandos SQL
+END;
+```
+
+**3. Function sem parâmetro**
+
+```sql
+CREATE FUNCTION nome()
+RETURNS TIPO
+DETERMINISTIC
+BEGIN
+    RETURN valor;
+END;
+```
+
+**4. Function com parâmetro**
+
+```sql
+CREATE FUNCTION nome(parametro TIPO)
+RETURNS TIPO
+DETERMINISTIC
+BEGIN
+    RETURN valor;
+END;
+```
+
+### O que mais merece atenção?
+
+- `CALL` executa uma Stored Procedure.
+- `SELECT` pode executar uma Function.
+- `IN` recebe valores de entrada na Stored Procedure.
+- `RETURNS` define o tipo de retorno da Function.
+- `RETURN` devolve o resultado da Function.
+- `DETERMINISTIC` indica que as mesmas entradas produzem o mesmo resultado.
+
+---
+
+**Fim da revisão! Bons estudos!**
